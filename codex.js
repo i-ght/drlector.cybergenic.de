@@ -44,7 +44,7 @@ function changeReflectorContents(quotes) {
 function initReflector(quotes) {
     const reflector = document.getElementById("reflector");
     reflector.addEventListener("animationiteration", () => {
-        if (quotes.length < 3) {
+        if (quotes.length < 6) {
             const newQuotes = getQuotes();
             shuffleArray(newQuotes);
             quotes.push(...newQuotes)
