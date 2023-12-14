@@ -1,4 +1,6 @@
-# Wise Words of Dr. Lector
+![aztec spiral](img/0.png)
+
+# WISE WORDS OF DR. LECTOR
 ## (From "Hannibal" TV show)
 
 - "Our brain is designed to experience anxiety in short bursts, not the prolonged foamy lathers of duress your neuroses seem to enjoy. It’s why you feel as though a lion were on the verge of devouring you.
