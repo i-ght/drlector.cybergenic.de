@@ -27,7 +27,7 @@ function construct6QuotesHtmlList(one, two, three, four, five, six) {
 
 function dequeueSixQuotes(quotes) {
     if (quotes.length < 6) {
-        throw new Error("quotes queue length needs to be > 3.");
+        throw new Error("quotes queue length needs to be >= 6.");
     }
 
     return [quotes.shift(), quotes.shift(), quotes.shift(), quotes.shift(), quotes.shift(), quotes.shift()];
