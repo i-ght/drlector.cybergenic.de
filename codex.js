@@ -21,21 +21,21 @@ function shuffleArray(array) {
     }
 }
 
-function construct3QuotesHtmlList(one, two, three) {
-    return `<ul><li>${one.join("")}</li><li>${two.join("")}</li><li>${three.join("")}</li></ul>`
+function construct6QuotesHtmlList(one, two, three, four, five, six) {
+    return `<ul><li>${one.join("")}</li><li>${two.join("")}</li><li>${three.join("")}</li><li>${four.join("")}</li><li>${five.join("")}</li><li>${six.join("")}</li></ul>`
 }
 
-function dequeueThreeQuotes(quotes) {
-    if (quotes.length < 3) {
+function dequeueSixQuotes(quotes) {
+    if (quotes.length < 6) {
         throw new Error("quotes queue length needs to be > 3.");
     }
 
-    return [quotes.shift(), quotes.shift(), quotes.shift()];
+    return [quotes.shift(), quotes.shift(), quotes.shift(), quotes.shift(), quotes.shift(), quotes.shift()];
 }
 
 function changeReflectorContents(quotes) {
-    const [one, two, three] = dequeueThreeQuotes(quotes);
-    const html = construct3QuotesHtmlList(one, two, three);
+    const [one, two, three, four, five, six] = dequeueSixQuotes(quotes);
+    const html = construct6QuotesHtmlList(one, two, three, four, five, six);
 
     const reflector = document.getElementById("reflector");
     reflector.innerHTML = html;
